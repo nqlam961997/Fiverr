@@ -1,0 +1,19 @@
+.btn{
+    @include styleButton($color-trans,$color-green-2,$pd-1,$pd-2 + 4,$border-radius + 2);
+    @include styleText($color-white-0,$fs-0,$fw-bold);
+    &:hover{
+        @include styleButtonHover($color-trans,$color-green-1,$color-white-0);
+    }
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn__overplay{
+    @include styleButton($color-trans,$color-trans,$pd-0 - 2,$pd-2,$border-radius + 20);
+    @include styleText($color-gray-2,$fs-0,$fw-bold);
+    &:hover{
+        @include styleButtonHover($color-trans,$color-black-light-1,$color-black-light);
+    }
+    cursor: pointer;
+    transition: all .5s;
+}

@@ -1,0 +1,180 @@
+// HERO BG
+.hero-main-wrapper {
+    background-color: #eef2f5;
+    bottom: 0;
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .hero-bg {
+        position: absolute;
+        background-color: #eef2f5;
+        bottom: 0;
+        right: 0;
+        border-bottom: 30vw solid;
+        border-bottom-color: #f192ad;
+        border-left: 80vw solid transparent;
+    }
+}
+.hero-bg{
+    background: #2e6a3c;
+}
+// HERO MAIN
+.hero-main-wrapper {
+    .hero-main {
+        padding-top: 100px;
+        position: relative;
+        height: 580px;
+        .hero-content {
+            padding-left: 150px;
+            width: 55%;
+            h2 {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .search-bar {
+                .form-inline {
+                    position: relative;
+                    .form-control {
+                        display: block;
+                        border-radius: 0;
+                        border-right: 0;
+                        margin: 10px 0;
+                        width: 80%;
+                        height: 50px;
+                        border: 1px #b5b6ba solid;
+                        color: #999;
+                        box-shadow: none;
+                        padding-left: 40px;
+                    }
+                    .btn {
+                        display: block;
+                        border: 1px #b5b6ba solid;
+                        border-radius: 0 3px 3px 0;
+                        border-left: none;
+                        width: 100px;
+                        height: 50px;
+                        background: #4fdb9a;
+                        color: white;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover {
+                            background: #19a463;
+                        }
+                    }
+                    .fa {
+                        position: absolute;
+                        display: block;
+                        left: 16px;
+                        top: 27px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// POPULAR
+.hero-main-wrapper {
+    .popular {
+        display: flex;
+        margin-top: 10px;
+        ul {
+            margin-left: 10px;
+            li {
+                display: inline;
+                padding: 0 5px;
+                a {
+                    color: rgb(112, 110, 110);
+                    border: 1px solid #b5b6ba;
+                    padding: 4px 7px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover {
+                        background: rgb(192, 191, 191);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// HERO IMG
+.hero-main-wrapper {
+    &::after {
+        content: "";
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+        opacity: 0.4;
+        height: 120px;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+    }
+    .hero-img {
+        margin-left: 60%;
+        transform: translateY(-41.5%);
+        .hero__content {
+            position: absolute;
+            bottom: 0;
+            left: 155px;
+            color: $color-white-0;
+            font-size: $fs-1;
+            &::before {
+                background: url(../../img/five_stars.e5c37f5.svg);
+                content: "";
+                display: block;
+                height: 13px;
+                width: 43%;
+                span {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+// TRUSTED BY
+.trusted__by {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+    height: 60px;
+    border-bottom: 5px solid rgba(247, 241, 241, 0.932);
+    .trusted__item {
+        padding-right: 50px;
+    }
+}
+/* Fading animation */
+.hero-wrapper {
+    -webkit-animation-name: hero-wrapper;
+    -webkit-animation-duration: 1.5s;
+    animation-name: hero-wrapper;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes hero-wrapper {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hero-wrapper {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}

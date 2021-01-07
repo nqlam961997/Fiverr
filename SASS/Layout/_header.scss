@@ -1,0 +1,131 @@
+header {
+    text-align: center;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+.navbar1 {
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.navbar1.navbar-expand-lg.sticky {
+    background-color: white;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .navbar-brand {
+        img {
+            width: 80px;
+            fill: #555;
+        }
+    }
+    .header__form {
+        opacity: 0;
+        align-items: center;
+        margin-top: 25px;
+        .input-group-text {
+            background-color: white;
+            color: #999;
+        }
+        .input-group-append {
+            .btn {
+                background-color: #1dbf73;
+                color: white;
+            }
+        }
+        .form-control,
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #ced4da;
+        }
+    }
+}
+.header__form.sticky {
+    opacity: 1;
+}
+.form-control {
+    border-left: none;
+    padding-left: 0;
+}
+.header__right {
+    .navbar-nav {
+        text-align: center;
+        .ude-btnGroup {
+            .btnUde-red {
+                background-color: white;
+                color: #555;
+                border: 1px solid #555;
+                padding: 5px 20px;
+                box-shadow: none;
+                border-radius: 3px;
+            }
+        }
+        .ude-btnGroup:hover .btnUde-red {
+            background-color: #1dbf73;
+            color: white;
+            border: 1px solid #1dbf73;
+            box-shadow: none;
+        }
+        .nav-item {
+            .nav-link {
+                color: #62646a;
+            }
+            .fivver {
+                color: #1fd0b6;
+            }
+            .fivver:hover{
+                color:#6ce9d7;
+            }
+            .english:hover{
+                color: #1dbf73;
+            }
+            .usd:hover{
+                color: #1dbf73;
+            }
+            .seller:hover{
+                color:  #959595;
+            }
+            .signIn:hover{
+                color: #959595;
+            }
+        }
+    }
+}
+.navbar2 {
+    opacity: 0;
+    transition: all 2s;
+    ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        justify-content: space-around;
+        border: 1px solid #999;
+        border-left: none;
+        border-right: none;
+        li {
+            padding: 10px 0;
+            a {
+                text-decoration: none;
+                color: #999;
+            }
+            transition: all 0.5s;
+        }
+        li:hover a{
+            border-bottom: 3px solid #1dbf73;
+            padding: 8px;
+        }
+    }
+}
+.navbar2.sticky {
+    opacity: 1;
+    background-color: white;
+}
